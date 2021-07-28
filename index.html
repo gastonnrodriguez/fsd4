@@ -4,96 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
     <title>Tareas FDS4</title>
   </head>
   <body>
-    <section>
-      <h1>Lista de tareas</h1>
-      <ul>
-        <li>Ir al Doctor</li>
-        <li>Trabajar</li>
-        <li>Almorzar</li>
-        <li>Estudiar</li>
-        <li>Sacar al perro</li>
-      </ul>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-1 has-text-centered has-background-primary">Tarea HTML</h1>
+      </div>
     </section>
-    <section>
-      <h1>Tabla</h1>
-      <table>
-        <tr>
-          <th>Fecha</th>
-          <th>Metodo de pago</th>
-          <th>Tipo</th>
-          <th>Cantidad</th>
-        </tr>
-        <tr>
-          <td>17/7/2021</td>
-          <td>Tarjeta</td>
-          <td>Gasto</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>18/7/2021</td>
-          <td>Efectivo</td>
-          <td>Ingreso</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>20/7/2021</td>
-          <td>Tarjeta</td>
-          <td>Gasto</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>21/7/2021</td>
-          <td>Tarjeta</td>
-          <td>Gasto</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>27/7/2021</td>
-          <td>Tarjeta</td>
-          <td>Gasto</td>
-          <td>1</td>
-        </tr>
-      </table>
+    <section class="section hero">
+      <div class="container">
+        <h2 class="title">Lista de tareas</h2>
+        <ul>
+          <li>Ir al Doctor</li>
+          <li>Trabajar</li>
+          <li>Almorzar</li>
+          <li>Estudiar</li>
+          <li>Sacar al perro</li>
+        </ul>
+      </div>
     </section>
-    <section>
-      <h1>Multimedia</h1>
-        <h2>video</h2>
-      <video src="./assets/Sea - 24216.mp4" controls autoplay poster="posterimage.jpg">
-        Tu navegador no admite el elemento <code>video</code>.
-      </video>
-      <h2>audio</h2>
-      <audio controls>        
-        <source src="./assets/bensound-happyrock.mp3" type="audio/mpeg">        
-      </audio> 
-      <h2>imagen</h2>
-      <img src="./assets/pexels-cottonbro-4836371.jpg" alt="russian arcade">
+    <section class="section hero">
+      <div class="container ">
+        <h2 class="title">Tabla</h2>
+        <table class="table ">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Metodo de pago</th>
+              <th>Tipo</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17/7/2021</td>
+              <td>Tarjeta</td>
+              <td>Gasto</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>18/7/2021</td>
+              <td>Efectivo</td>
+              <td>Ingreso</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>20/7/2021</td>
+              <td>Tarjeta</td>
+              <td>Gasto</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>21/7/2021</td>
+              <td>Tarjeta</td>
+              <td>Gasto</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>27/7/2021</td>
+              <td>Tarjeta</td>
+              <td>Gasto</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-    <section>
-      <h1>Formulario</h1>
-      <form>
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="lastname">Apellido:</label><br>
-        <input type="text" id="lastname" name="lastname" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="birthdate">Fecha de nacimiento:</label><br>
-        <input type="date" id="birthdate" name="birthdate" required><br>
-        <label for="sport">Deporte favorito</label><br>
-        <select name="sport" id="sport">
-            <option value="Futbol">Futbol</option>
-            <option value="Basketball">Basketball</option>
-            <option value="Natacion">Natacion</option>
-            <option value="Rugby">Rugby</option>
-        </select><br>
-        <label for="biography">Sobre mi</label><br>
-        <textarea name="biography" id="biography" cols="30" rows="10"></textarea><br>
-        <button type="submit">Registrarse</button>
-      </form> 
+    <section class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Multimedia</h2>
+        <h3 class="title is-4 has-text-centered">video</h3>
+        <video src="./assets/Sea - 24216.mp4" controls autoplay></video>
+        <h3 class="title is-4 has-text-centered">audio</h3>
+        <audio controls class="is-fullwidth">
+          <source src="./assets/bensound-happyrock.mp3" type="audio/mpeg" />
+        </audio>
+        <h3 class="title is-4 has-text-centered">imagen</h3>
+        <figure class="iamge is-16by9"">
+          <img
+            src="./assets/pexels-cottonbro-4836371.jpg"
+            alt="russian arcade"
+          />
+        </figure>
+      </div>
+    </section>
+    <section class="section">
+      <h3 class="title is-4">Formulario</h3>
+      <form class="box hero">
+        <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control">
+                <input class="input" id="name" name="name" type="text" placeholder="Gaston" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Apellido</label>
+            <div class="control">
+                <input class="input" id="lastname" name="lastname" type="text" placeholder="Rodriguez" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" id="email" name="email" type="email" placeholder="gastonnrodriguez@gmail.com" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Fecha de nacimiento</label>
+            <div class="control">
+                <input class="input" id="birthdate" name="birthdate" type="date" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Deporte favorito</label>
+            <div class="control">
+                <div class="select is-fullwidth">    
+                    <select name="sport" id="sport">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Natacion">Natacion</option>
+                        <option value="Rugby">Rugby</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" >Sobre mi</label>
+            <textarea class="textarea" name="biography" id="biography" cols="30" rows="10"></textarea>
+        </div>
+        <div class="field">
+            <button class="button is-primary is-medium is-rounded is-pulled-right" type="submit">Registrarse</button>
+        </div>
+        
+      </form>
     </section>
   </body>
 </html>
