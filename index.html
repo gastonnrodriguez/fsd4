@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tareas FDS4</title>
+  </head>
+  <body>
+    <section>
+      <h1>Lista de tareas</h1>
+      <ul>
+        <li>Ir al Doctor</li>
+        <li>Trabajar</li>
+        <li>Almorzar</li>
+        <li>Estudiar</li>
+        <li>Sacar al perro</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Tabla</h1>
+      <table>
+        <tr>
+          <th>Fecha</th>
+          <th>Metodo de pago</th>
+          <th>Tipo</th>
+          <th>Cantidad</th>
+        </tr>
+        <tr>
+          <td>17/7/2021</td>
+          <td>Tarjeta</td>
+          <td>Gasto</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>18/7/2021</td>
+          <td>Efectivo</td>
+          <td>Ingreso</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>20/7/2021</td>
+          <td>Tarjeta</td>
+          <td>Gasto</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>21/7/2021</td>
+          <td>Tarjeta</td>
+          <td>Gasto</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>27/7/2021</td>
+          <td>Tarjeta</td>
+          <td>Gasto</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1>Multimedia</h1>
+        <h2>video</h2>
+      <video src="./assets/Sea - 24216.mp4" controls autoplay poster="posterimage.jpg">
+        Tu navegador no admite el elemento <code>video</code>.
+      </video>
+      <h2>audio</h2>
+      <audio controls>        
+        <source src="./assets/bensound-happyrock.mp3" type="audio/mpeg">        
+      </audio> 
+      <h2>imagen</h2>
+      <img src="./assets/pexels-cottonbro-4836371.jpg" alt="russian arcade">
+    </section>
+    <section>
+      <h1>Formulario</h1>
+      <form>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="lastname">Apellido:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="birthdate">Fecha de nacimiento:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+        <label for="sport">Deporte favorito</label><br>
+        <select name="sport" id="sport">
+            <option value="Futbol">Futbol</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Natacion">Natacion</option>
+            <option value="Rugby">Rugby</option>
+        </select><br>
+        <label for="biography">Sobre mi</label><br>
+        <textarea name="biography" id="biography" cols="30" rows="10"></textarea><br>
+        <button type="submit">Registrarse</button>
+      </form> 
+    </section>
+  </body>
+</html>
