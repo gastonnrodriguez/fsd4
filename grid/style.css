@@ -1,76 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-
 * {
-  font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 .cell-content {
-  display: flex;
-  border-radius: 5px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  color: white;
+    display: grid;
+    /* new */
+    align-items: center;
+    /* new */
+    justify-items: center;
+    /* new */
+    border-radius: 5px;
+    height: 50px;
+    font-size: 2.5rem;
+    color: white;
 }
 
+
 /*Ejercicio 1*/
+
 .grid-container {
-  display: grid;
-  background-color: #fff275;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px;
+    display: grid;
+    background-color: #71F79F;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 .box {
-  background-color: #6699cc;
+    background-color: #15B097;
 }
 
+
 /*Ejercicio 2*/
+
 .container2 {
-  display: grid;
-  background-color: darkgoldenrod;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
 
 .grid-item {
-  background-color: rgb(164, 164, 238);
-  height: auto;
+    background-color: #A8C686;
+    height: auto;
 }
 
 .e {
-  grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #669BBC;
 }
+
+
 /*Ejercicio 3*/
 
 .container3 {
-  display: grid;
-  background-color: chocolate;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
 }
 
-.grid-obj{
-    background-color: aquamarine;
-  height: auto;
+.grid-obj {
+    height: auto;
 }
 
-.alfa{
-    grid-column-start:1;
-    grid-column-end:4;
+.alfa {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #586BA4;
 }
 
-.beta{
-grid-column-start: 1 ;
-grid-row-start:2;
-grid-row-end: 4;
+.beta {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #324376;
 }
 
-.epsilon{
+.gamma {
+    background-color: #F5DD90;
+}
+
+.delta {
+    background-color: #F68E5F;
+}
+
+.epsilon {
     grid-column-start: 2;
     grid-column-end: 4;
+    background-color: #F76C5E;
 }
