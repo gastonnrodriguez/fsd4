@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  font-family: Inter;  
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:"uno uno uno uno"
+                        "uno uno uno uno"   
+                        "uno uno uno uno"
+                        "uno uno uno uno"
+                        "dos tres cuatro cinco"
+                        "dos seis cuatro cinco"
+                        "dos seis siete cinco"
+                        "dos seis ocho nueve";
+    gap: 5px;
+}
+
+.area{
+    background-color: yellow;    
+}
+
+.uno{
+    grid-area: uno;
+}
+
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+.cuatro{
+    grid-area: cuatro;    
+}
+
+.cinco{
+    grid-area: cinco;
+}
+
+.seis{
+    grid-area: seis;
+}
+
+.siete{
+    grid-area: siete;
+}
+
+.ocho{
+    grid-area: ocho;
+}

@@ -1,29 +1,49 @@
-.container{
-    display: grid;
-    width: 100%;
-    height: 250px;
-    grid-template-areas:"head head"
-                        "nav main"
-                        "nav footer";
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px 1fr 30px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  font-family: Inter;
+  box-sizing: border-box;  
 }
-    header{
-        grid-area: head;
-        background-color: yellow;
-    }
 
-    nav{
-        grid-area: nav;
-        background-color: blue;
-    }
+.container {
+  display: grid;
+  width: 100%;
+  height: 300px;
+  grid-template-areas:
+    "head head"
+    "sidebar main"
+    "sidebar main"
+    "sidebar extra"
+    "footer footer";
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px 1fr 10px;
+  gap: 10px;
+}
+.area {
+  display: grid;
+  justify-content: center;   
+}
 
-    main{
-        grid-area: main;
-        background-color: red;
-    }
+header {
+  grid-area: head;
+  background-color: #e63946;
+}
 
-    footer{
-        grid-area: footer;
-        background-color: saddlebrownÎ;
-    }
+sidebar {
+  grid-area: sidebar;
+  background-color: #f1faee;
+}
+
+extra {
+  grid-area: extra;
+  background-color: #a8dadc;
+}
+
+main {
+  grid-area: main;
+  background-color: #457b9d;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #1d3557;
+}

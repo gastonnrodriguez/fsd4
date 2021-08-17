@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  font-family: Inter;  
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:"header header header header"
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav article article article"   
+                        "nav ads ads ads"   
+                        "footer footer footer footer";
+    gap: 5px;
+}
+
+.area{
+    background-color: yellowgreen;    
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+article{
+    grid-area: article;
+}
+
+ads{
+    grid-area: ads;
+}
+
+footer{
+    grid-area: footer;
+}
+
